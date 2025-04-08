@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    background-image: url('Fundo.png.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+    min-height: 100vh;
+    padding: 0;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+  
+  .menu-centralizado {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-centralizado li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 100px; /* Ajuste conforme o tamanho da sua logo */
+  }
+  
+  nav {
+    background-color: #0ea5e9;
+    padding: 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.btn-jogar {
+    background-color: #0369a1;
+  }
+  
+  .secao {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0f172a;
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .galeria img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .email-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-jogar-grande {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #10b981;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn-jogar-grande:hover {
+    background-color: #059669;
+  }
+  
+  footer {
+    background-color: #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #475569;
+  }
+  .logo-footer {
+    height: 40px;
+  }

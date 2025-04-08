@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Aventura de BMO</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="Logo.png" rel="shortcut icon">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <img src="Logo.png" alt="Logo do jogo">
+      </div>
+    <ul class="menu-centralizado">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#jogar" class="btn-jogar">Jogar</a></li>
+    </ul>
+  </nav>
+  <div class="overlay">
+
+  <section id="home" class="secao">
+    <h1>A Aventura de BMO</h1>
+    <p>Entre no universo pixelado de Hora de Aventura com BMO! Um jogo de plataforma divertido e nostálgico.</p>
+  </section>
+
+  <section id="sobre" class="secao">
+    <h2>Sobre o Jogo</h2>
+    <p>Este jogo é inspirado no personagem BMO de Hora de Aventura. O estilo é semelhante ao Mario clássico, com fases, obstáculos e muita diversão!
+        Seu objetivo nesse jogo é coletar as engrenagens que vão estar espalhadas pelo mapa e evitar os inimigos que vão tentar te impedir de coletá-las
+        e também evitar cair em buracos. O jogo é dividido em 2 fases, cada uma com seu próprio desafio. Enfrente todos esses desafios e pule na bandeira para sair vitorioso nesse jogo inspirado no BMO de Hora de Aventura!
+    </p>
+  </section>
+
+  <section id="galeria" class="secao">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="Captura de tela 2025-04-07 205518.png" alt="Print 1">
+      <img src="Captura de tela 2025-04-07 210050.png" alt="Print 2">
+      <img src="" alt="Print 3">
+    </div>
+  </section>
+
+  <section id="contato" class="secao">
+    <h2>Contato</h2>
+    <p>Quer mandar feedback ou ideias? Me envie um e-mail:</p>
+    <a href="joao.crispin@grupointegrado.br" class="email-link">joao.crispin@grupointegrado.br</a>
+  </section>
+
+  <section id="jogar" class="secao">
+    <h2>Jogar</h2>
+    <p>Pronto para jogar? Clique no botão abaixo e comece sua aventura!</p>
+    <a href="#" class="btn-jogar-grande">Jogar Agora</a>
+  </section>
+
+  <footer>
+    <p>
+        <img src="Logo.png" alt="Logo" class="logo-footer">
+        <p>Desenvolvido por João Vitor Crispin</p>
+      </p>
+  </footer>
+</div>
+<script>
+    const botoesMenu = document.querySelectorAll("nav a");
+    const secoes = document.querySelectorAll(".secao");
+  
+    botoesMenu.forEach(botao => {
+      botao.addEventListener("click", (e) => {
+        e.preventDefault();
+  
+        const alvo = botao.getAttribute("href").replace("#", "");
+  
+        // Se for "home", mostra tudo
+        if (alvo === "home") {
+          secoes.forEach(secao => secao.style.display = "block");
+        } else {
+          secoes.forEach(secao => {
+            if (secao.id === alvo) {
+              secao.style.display = "block";
+            } else {
+              secao.style.display = "none";
+            }
+          });
+        }
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
