@@ -49,6 +49,7 @@
     height: 100px; /* Ajuste conforme o tamanho da sua logo */
   }
   
+  
   nav {
     background-color: #0ea5e9;
     padding: 15px;
@@ -141,5 +142,13 @@
   }
   .logo-footer {
     height: 40px;
+  }
+  .imagem-topo {
+    width: 100%;
+    max-width: 400px; /* ajusta o tamanho máximo */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
   }
   
