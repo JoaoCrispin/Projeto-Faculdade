@@ -90,15 +90,22 @@
   
   .galeria {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    margin-top: 20px;
   }
   
   .galeria img {
-    max-width: 250px;
+    width: 400px; /* Aumente esse valor se quiser ainda maior */
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
   }
   
   .email-link {
@@ -135,3 +142,4 @@
   .logo-footer {
     height: 40px;
   }
+  
