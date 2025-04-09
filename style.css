@@ -275,4 +275,23 @@
       font-size: 0.8rem;
     }
   }
+  .form-contato input,
+  .form-contato textarea {
+    color: white; /* Texto digitado */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo visível e contrastante */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
   
+  .form-contato input::placeholder,
+  .form-contato textarea::placeholder {
+    color: #bbbbbb; /* Cor do texto explicativo dentro do campo */
+    font-style: italic;
+  }
+  
+  .form-contato label {
+    color: white; /* Texto dos labels */
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }

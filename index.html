@@ -52,16 +52,53 @@
     <div class="icone-bmo">
       <img src="Logo.png" alt="Ícone do BMO">
     </div>
-    <h2>Quer dar sugestões ou feedbacks!</h2>
-    <form action="https://formspree.io/f/mvgkdzzw" method="POST" class="form-contato">
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+    <form id="form-contato" class="form-contato">
+      <h2>Fale com a gente</h2>
     
-      <input type="hidden" name="_redirect" value="https://joaocrispin.github.io/Projeto-Faculdade/obrigado.html">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
       
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+      
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+    
       <button type="submit">Enviar Mensagem</button>
     </form>
+    
+    <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px; font-size: 1.3rem;">
+      ✅ Mensagem enviada com sucesso!
+    </div>
+    
+    
+    
+    <script>
+      const form = document.getElementById('form-contato');
+      const mensagem = document.getElementById('mensagem-sucesso');
+    
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    
+        const dados = new FormData(form);
+    
+        fetch('https://formspree.io/f/mvgkdzzw', {
+          method: 'POST',
+          body: dados,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            form.reset();
+            mensagem.style.display = 'block';
+          } else {
+            alert("Erro ao enviar mensagem. Tente novamente.");
+          }
+        });
+      });
+    </script>
+    
     
   </section>
 
