@@ -46,7 +46,7 @@
   }
   
   .logo img {
-    height: 100px; /* Ajuste conforme o tamanho da sua logo */
+    height: 100px; 
   }
   
   
@@ -98,7 +98,7 @@
   }
   
   .galeria img {
-    width: 400px; /* Aumente esse valor se quiser ainda maior */
+    width: 400px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -145,10 +145,69 @@
   }
   .imagem-topo {
     width: 100%;
-    max-width: 400px; /* ajusta o tamanho máximo */
+    max-width: 400px;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
   }
+  .form-contato {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.5); /* fundo levemente escuro e transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color: white;
+  }
   
+  .form-contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .form-contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .form-contato input,
+  .form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .form-contato button {
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .form-contato button:hover {
+    background-color: #009dcc;
+  }
+  .icone-bmo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .icone-bmo img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,255,255,0.4);
+  }
