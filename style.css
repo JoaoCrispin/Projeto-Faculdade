@@ -120,6 +120,7 @@
   .btn-jogar-grande {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 40px;
     background-color: #10b981;
     color: white;
     padding: 15px 30px;
