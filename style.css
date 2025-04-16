@@ -155,7 +155,7 @@
   .form-contato {
     max-width: 600px;
     margin: 30px auto;
-    background-color: rgba(0, 0, 0, 0.5); /* fundo levemente escuro e transparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
@@ -278,20 +278,20 @@
   }
   .form-contato input,
   .form-contato textarea {
-    color: white; /* Texto digitado */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo visível e contrastante */
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
     border: 1px solid #ccc;
     border-radius: 10px;
   }
   
   .form-contato input::placeholder,
   .form-contato textarea::placeholder {
-    color: #bbbbbb; /* Cor do texto explicativo dentro do campo */
+    color: #bbbbbb; 
     font-style: italic;
   }
   
   .form-contato label {
-    color: white; /* Texto dos labels */
+    color: white; 
     font-weight: bold;
     display: block;
     margin-top: 10px;
